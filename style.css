@@ -76,6 +76,30 @@ form button {
 form button:hover {
   background: #2bbbad;
 }
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #2bbbad;
+}
+
+.project-detail {
+  background: white;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  border-left: 5px solid var(--primary);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+}
 
 footer {
   text-align: center;
