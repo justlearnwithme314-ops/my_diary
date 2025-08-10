@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Cheatsheet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+<header class="bg-blue-900 text-white p-6 text-center">
+  <h1 class="text-3xl font-bold">Tailwind CSS Cheatsheet</h1>
+  <p class="text-blue-200">A comprehensive quick reference for essential Tailwind classes</p>
+  <a href="articles.html" class="text-blue-300 hover:underline">← Back to Articles</a>
+</header>
+
+<main class="max-w-5xl mx-auto mt-8 p-4 space-y-10">
+
+  <!-- Typography -->
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Typography</h2>
+    <ul class="space-y-2">
+      <li><strong>Font Size:</strong> <code>text-xs</code> → <code>text-9xl</code></li>
+      <li class="bg-white p-3 rounded shadow">
+        Example: <span class="text-sm">Small</span>, <span class="text-xl">Extra Large</span>
+      </li>
+      <li><strong>Font Weight:</strong> <code>font-light</code>, <code>font-bold</code>, <code>font-black</code></li>
+      <li><strong>Text Transform:</strong> <code>uppercase</code>, <code>lowercase</code>, <code>capitalize</code></li>
+      <li><strong>Text Alignment:</strong> <code>text-left</code>, <code>text-center</code>, <code>text-right</code></li>
+      <li><strong>Text Color:</strong> <code>text-red-500</code>, <code>text-blue-600</code></li>
+    </ul>
+  </section>
+
+  <!-- Colors & Backgrounds -->
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Colors & Backgrounds</h2>
+    <ul class="space-y-2">
+      <li><strong>Text Color:</strong> <code>text-gray-700</code>, <code>text-green-500</code></li>
+      <li><strong>Background Color:</strong> <code>bg-yellow-200</code>, <code>bg-indigo-600</code></li>
+      <li><strong>Hover States:</strong> <code>hover:bg-red-500</code></li>
+      <li class="bg-white p-3 rounded shadow">
+        Example: <button class="px-4 py-2 bg-green-500 hover:bg-green-700 text-white rounded">Hover Me</button>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Spacing -->
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Spacing (Margin & Padding)</h2>
+    <ul class="space-y-2">
+      <li><strong>Margin:</strong> <code>m-0</code> to <code>m-96</code>, side-specific: <code>mt-4</code>, <code>mb-2</code></li>
+      <li><strong>Padding:</strong> <code>p-0</code> to <code>p-96</code>, side-specific: <code>px-4</code>, <code>py-2</code></li>
+      <li class="bg-white p-3 rounded shadow">
+        Example: <div class="m-4 p-4 bg-blue-200 rounded">Margin & Padding Example</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Layout -->
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Layout</h2>
+    <ul class="space-y-2">
+      <li><strong>Display:</strong> <code>block</code>, <code>inline-block</code>, <code>flex</code>, <code>grid</code></li>
+      <li><strong>Flex:</strong> <code>flex-row</code>, <code>flex-col</code>, <code>justify-center</code>, <code>items-center</code></li>
+      <li><strong>Grid:</strong> <code>grid-cols-3</code>, <code>gap-4</code></li>
+      <li class="bg-white p-3 rounded shadow">
+        Example:
+        <div class="flex space-x-2 mt-2">
+          <div class="bg-red-300 p-4">1</div>
+          <div class="bg-green-300 p-4">2</div>
+          <div class="bg-blue-300 p-4">3</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Borders & Radius -->
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Borders & Radius</h2>
+    <ul class="space-y-2">
+      <li><strong>Border Width:</strong> <code>border</code>, <code>border-2</code>, <code>border-4</code></li>
+      <li><strong>Border Color:</strong> <code>border-gray-300</code>, <code>border-red-500</code></li>
+      <li><strong>Radius:</strong> <code>rounded</code>, <code>rounded-lg</code>, <code>rounded-full</code></li>
+      <li class="bg-white p-3 rounded shadow">
+        Example: <div class="border-2 border-blue-500 rounded-lg p-4">Border & Radius</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Shadows & Effects -->
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Shadows & Effects</h2>
+    <ul class="space-y-2">
+      <li><strong>Shadow:</strong> <code>shadow-sm</code>, <code>shadow</code>, <code>shadow-lg</code></li>
+      <li><strong>Opacity:</strong> <code>opacity-50</code>, <code>opacity-100</code></li>
+      <li class="bg-white p-3 rounded shadow">
+        Example: <div class="p-4 bg-yellow-200 shadow-lg">Shadow Example</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Sizing -->
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Sizing</h2>
+    <ul class="space-y-2">
+      <li><strong>Width:</strong> <code>w-1/2</code>, <code>w-full</code>, <code>w-screen</code></li>
+      <li><strong>Height:</strong> <code>h-16</code>, <code>h-full</code>, <code>h-screen</code></li>
+      <li class="bg-white p-3 rounded shadow">
+        Example: <div class="w-1/2 h-16 bg-purple-300">50% width, fixed height</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Position -->
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Position</h2>
+    <ul class="space-y-2">
+      <li><strong>Static / Relative / Absolute / Fixed / Sticky:</strong> <code>relative</code>, <code>absolute</code>, <code>fixed</code></li>
+      <li><strong>Offsets:</strong> <code>top-0</code>, <code>right-4</code></li>
+      <li class="bg-white p-3 rounded shadow relative h-20">
+        Example: <div class="absolute top-2 right-2 bg-red-400 p-2">Absolute Box</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Responsive -->
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Responsive Design</h2>
+    <ul class="space-y-2">
+      <li><strong>Prefix:</strong> <code>sm:</code>, <code>md:</code>, <code>lg:</code>, <code>xl:</code>, <code>2xl:</code></li>
+      <li class="bg-white p-3 rounded shadow">
+        Example: <div class="bg-green-300 p-4 sm:bg-blue-300 md:bg-yellow-300">Resize me!</div>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+</body>
+</html>
